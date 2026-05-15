@@ -1,6 +1,6 @@
 # Velath Daily Report Automation — Google Apps Script
 
-Automated daily R&D reporting system built entirely inside Google Sheets + Google Apps Script. No software to install. No servers. No Docker. Runs entirely on Google Cloud.
+Automated daily job reporting system built entirely inside Google Sheets + Google Apps Script. No software to install. No servers. No Docker. Runs entirely on Google Suite.
 
 **Last updated:** May 2026  
 **General Guide:** https://canva.link/huha9558dxprhch
