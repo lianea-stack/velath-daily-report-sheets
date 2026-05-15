@@ -2,7 +2,6 @@
 
 Automated daily R&D reporting system built entirely inside Google Sheets + Google Apps Script. No software to install. No servers. No Docker. Runs entirely on Google Cloud.
 
-**Prepared by:** Liane Acero · R&D Engineer · Velath  
 **Last updated:** May 2026  
 **General Guide:** https://canva.link/huha9558dxprhch
 ---
@@ -11,7 +10,7 @@ Automated daily R&D reporting system built entirely inside Google Sheets + Googl
 
 - Reads task entries from a Google Sheet (Sheet1)
 - Builds a formatted HTML email from those entries
-- Sends the email automatically at 5PM, Monday–Saturday
+- Sends the email automatically at 5PM in between to 6PM, Monday–Saturday
 - Allows manual preview and send via buttons in the Sheet
 - Supports preview and send via Web App URL (for testing or external triggers)
 
@@ -56,7 +55,7 @@ Then follow the [7-step setup guide](docs/setup-guide.html) — no technical bac
 1. Create a new Google Sheet
 2. Set up columns A–G as shown in the Sheet Structure table above
 3. Go to **Extensions → Apps Script**
-4. Paste the contents of [`script/Code.gs`](script/Code.gs) into the editor
+4. Paste the contents of [`Sheet Script.gs`](Sheet Script.gs) into the editor
 5. Edit the `CONFIG` block at the top with your details
 6. Follow Steps 4–7 in the [setup guide](docs/setup-guide.html)
 
@@ -64,20 +63,19 @@ Then follow the [7-step setup guide](docs/setup-guide.html) — no technical bac
 
 ## Configuration
 
-All settings are at the top of `Code.gs` in the `CONFIG` block. You only ever need to edit this section.
+All settings are at the top of `Sheet Script.gs` in the `CONFIG` block. You only ever need to edit this section.
 
 ```javascript
 const CONFIG = {
-  senderName:    "Liane",                  // Your name (appears in email sign-off)
-  toEmail:       "Ops.UAE@velath.com",     // Primary recipient
-  ccEmail:       "",                       // CC — leave "" to skip
-  bccEmail:      "",                       // BCC — leave "" to skip
-  replyTo:       "",                       // Reply-To — leave "" to use sender address
-  sheetName:     "Sheet1",                 // Sheet tab name — must match exactly
-  greeting:      "Dear GM,",              // Email greeting line
-  signoff:       "Regards,",              // Email sign-off line
-  skipDays:      [0],                     // Days to skip: 0=Sun, 6=Sat. [] = send every day
-  subjectPrefix: "R&D - Daily Report",    // Appears in the subject after the date
+  smtpEmail:    "your.email@company.com",   // ← Input your email
+  smtpPassword: "",
+  toEmail:      "recipient@company.com",    // ← Change this to the email of the reciepient
+  ccEmail:      "", 
+  bccEmail:     "",
+  sheetName:    "Sheet1",
+  greeting:     "Dear GM,",
+  signoff:      "Regards,",
+  senderName:   "Your Name",               // ← Add your name here
 };
 ```
 
