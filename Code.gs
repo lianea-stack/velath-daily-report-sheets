@@ -446,7 +446,7 @@ function buildEmail() {
           <tr>
             <td style="background:#0f2133;padding:22px 28px;">
               <span style="color:#ffffff;font-size:16px;font-weight:700;letter-spacing:0.3px;">
-                📊 Velath R&amp;D — Daily Report
+                📊 Velath Engineering International FZC — Daily Job Report
               </span>
               <span style="float:right;color:#8ab8d8;font-size:13px;line-height:2;">
                 ${dd}-${mm}-${yy}
