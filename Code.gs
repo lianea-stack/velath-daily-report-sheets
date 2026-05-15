@@ -459,7 +459,7 @@ function buildEmail() {
             <td style="padding:22px 28px 8px;">
               <p style="margin:0;font-size:14px;color:#1e293b;">${escapeHtml(CONFIG.greeting)}</p>
               <p style="margin:10px 0 0;font-size:13.5px;color:#475569;">
-                Please find below the R&amp;D task status update for today.
+                Please find below the my task status update for today.
               </p>
             </td>
           </tr>
