@@ -171,10 +171,8 @@ The trigger fires sometime between 5PM and 6PM. Sundays are automatically skippe
 
 ```
 velath-daily-report-sheets/
-├── script/
-│   └── Code.gs              ← Full Apps Script with detailed comments
-├── docs/
-│   └── setup-guide.html     ← 7-step interactive setup guide for non-technical users
+├── Code.gs              ← Full Apps Script with detailed comments
+├── setup-guide.html     ← 7-step interactive setup guide for non-technical users
 ├── README.md
 ├── CHANGELOG.md
 └── .gitignore
