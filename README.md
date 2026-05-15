@@ -4,7 +4,7 @@ Automated daily R&D reporting system built entirely inside Google Sheets + Googl
 
 **Prepared by:** Liane Acero · R&D Engineer · Velath  
 **Last updated:** May 2026
-
+**General Guide:** https://canva.link/huha9558dxprhch
 ---
 
 ## What it does
